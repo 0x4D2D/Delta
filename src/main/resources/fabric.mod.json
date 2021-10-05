@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "delta",
+  "version": "${version}",
+
+  "name": "Delta",
+  "description": "A Multi-purpose minecraft crash and forceop mod",
+  "authors": [
+    "Saturn5VFive"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Saturn5Vfive/Delta",
+    "sources": "https://github.com/Saturn5Vfive/Delta"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/delta/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.saturn.delta.Delta"
+    ]
+  },
+  "mixins": [
+    "delta.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
