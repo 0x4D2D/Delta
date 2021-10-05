@@ -27,8 +27,9 @@ Delta being mainly a crash client has a veriety of crash exploits to choose from
 
   
 **Creative Only Crash exploits**
+  
 you can access the creative crash exploits by doing $item list, choose one with $item <item>
 
--ArmorCrash, crash paper servers with an invalid armor
--CrashShulker, crash 1.16.5 paper servers using an invalid shulker
--CrashEgg, crash servers with a spawn egg
+- ArmorCrash, crash paper servers with an invalid armor
+- CrashShulker, crash 1.16.5 paper servers using an invalid shulker
+- CrashEgg, crash servers with a spawn egg
