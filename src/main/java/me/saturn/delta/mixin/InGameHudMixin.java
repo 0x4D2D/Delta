@@ -21,7 +21,7 @@ public class InGameHudMixin {
         Delta.clienttick();
         if(Delta.timeoutTicks > 150){
             String s = "CRASHING: " + Delta.timeoutTicks + "ms";
-            Delta.c.textRenderer.draw(matrix, s, (Delta.c.getWindow().getScaledWidth() / 2) - Delta.c.textRenderer.getWidth(s), 3, 7289492);
+            Delta.c.textRenderer.draw(matrix, s, (Delta.c.getWindow().getScaledWidth() / 2) - (Delta.c.textRenderer.getWidth(s) / 2), 3, 7289492);
         }
     }
 }
