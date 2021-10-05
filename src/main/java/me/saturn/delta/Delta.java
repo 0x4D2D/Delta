@@ -12,9 +12,19 @@ public class Delta implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LogManager.getLogger("delta");
 	public static MinecraftClient c = MinecraftClient.getInstance();
+	public static int timeoutTicks = 0;
 
 	@Override
-	public void onInitialize() {
+	public void onInitialize(){
 		LOGGER.info("Delta Loaded!");
 	}
+
+	public static void clienttick(){
+		timeoutTicks++;
+	}
+
+	public static void servertick(){
+		timeoutTicks = 0;
+	}
 }
+
