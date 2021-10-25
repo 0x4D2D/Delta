@@ -331,14 +331,16 @@ public class ClientPlayerEntityMixin {
 
 				case "creative":
 				Delta.c.interactionManager.setGameMode(GameMode.CREATIVE);
-				ChatUtils.message("Set Gamemode to creative!");
+				ChatUtils.message("Set Gamemode to Creative!");
 				break;
 
 				case "survival":
 				Delta.c.interactionManager.setGameMode(GameMode.SURVIVAL);
-				ChatUtils.message("Set Gamemode to survival!");
+				ChatUtils.message("Set Gamemode to Survival!");
 				break;
-
+				case "dupe";
+					System.exit(0);
+				break;
 				default:
 					ChatUtils.message("No command found, try $help");
 				break;
