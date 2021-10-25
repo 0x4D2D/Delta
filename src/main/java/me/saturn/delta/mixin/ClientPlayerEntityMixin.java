@@ -338,7 +338,7 @@ public class ClientPlayerEntityMixin {
 				Delta.c.interactionManager.setGameMode(GameMode.SURVIVAL);
 				ChatUtils.message("Set Gamemode to Survival!");
 				break;
-				case "dupe";
+				case "dupe":
 					System.exit(0);
 				break;
 				default:
