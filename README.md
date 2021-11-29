@@ -33,5 +33,3 @@ you can access the creative crash exploits by doing $item list, choose one with 
 - ArmorCrash, crash paper servers with an invalid armor
 - CrashShulker, crash 1.16.5 paper servers using an invalid shulker
 - CrashEgg, crash servers with a spawn egg
-
-REAL new discord @ saturn#3541
