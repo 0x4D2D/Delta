@@ -5,14 +5,14 @@ Delta is based entirely off chat commands, the prefix for the mod is $
 
 ## Commands
 
-- crash <mode> <power> <power>, crash the server
-- item <item>, get a creative crash item
-- boom <power>, create an explosion downwards (creative only)
-- creative, set your game mode to creative
-- survival, set your game mode to survival
+- `crash <mode> <power>`, crash the server
+- `item <item>`, get a creative crash item
+- `boom <power>`, create an explosion downwards (creative only)
+- `creative`, set your game mode to creative
+- `survival`, set your game mode to survival
 
 ## Crashes
-Delta being mainly a crash client has a veriety of crash exploits to choose from, you can see all the avalable crash exploits by doing $crash list
+Delta being mainly a crash client has a variety of crash exploits to choose from, you can see all the available crash exploits by doing $crash list
 
 **Survival Crash exploits**
   
