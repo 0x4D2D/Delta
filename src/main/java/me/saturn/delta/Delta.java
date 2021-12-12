@@ -1,5 +1,6 @@
 package me.saturn.delta;
 
+import me.saturn.delta.config.Container;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.client.MinecraftClient;
 import org.apache.logging.log4j.LogManager;
@@ -11,13 +12,24 @@ public class Delta implements ModInitializer {
     // That way, it's clear which mod wrote info, warnings, and errors.
     public static final Logger          LOGGER       = LogManager.getLogger("delta");
     public static       MinecraftClient c            = MinecraftClient.getInstance();
+    public static Container config = new Container();
     public static long lastServerTick = System.currentTimeMillis();
 
     public static void servertick() {
         lastServerTick = System.currentTimeMillis();
     }
 
+    public static String getPrefix() {
+        return config.getConfig().prefix;
+    }
+
+    public static void saveConfig() {
+        config.save();
+    }
+
     @Override public void onInitialize() {
+        config.load();
+        Runtime.getRuntime().addShutdownHook(new Thread(Delta::saveConfig));
         LOGGER.info("Delta Loaded!");
     }
 }

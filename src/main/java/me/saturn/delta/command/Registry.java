@@ -6,6 +6,7 @@ import me.saturn.delta.command.impl.Creative;
 import me.saturn.delta.command.impl.Dupe;
 import me.saturn.delta.command.impl.Help;
 import me.saturn.delta.command.impl.Item;
+import me.saturn.delta.command.impl.Prefix;
 import me.saturn.delta.command.impl.Survival;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class Registry {
         commands.add(new Creative());
         commands.add(new Survival());
         commands.add(new Dupe());
+        commands.add(new Prefix());
     }
 
     public List<Command> getCommands() {

@@ -66,7 +66,7 @@ public class Item extends Command {
 
     @Override public void execute(String[] args) {
         if (args.length == 0) {
-            ChatUtils.message("use $item <item> (use $item list to show all)");
+            ChatUtils.message("use "+Delta.getPrefix()+"item <item> (use "+Delta.getPrefix()+"item list to show all)");
             return;
         }
         if (!Delta.c.interactionManager.hasCreativeInventory()) {
@@ -82,6 +82,6 @@ public class Item extends Command {
                 return;
             }
         }
-        ChatUtils.message("Couldnt find item. do $item list to list them");
+        ChatUtils.message("Couldnt find item. do "+Delta.getPrefix()+"item list to list them");
     }
 }

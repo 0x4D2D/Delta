@@ -128,7 +128,7 @@ public class Crash extends Command {
                     ChatUtils.message("Packets Sent - (" + (System.currentTimeMillis() - sy) + ")");
                 }).start();
             } catch (Exception e) {
-                ChatUtils.message("use $crash givebook <pages> <power>");
+                ChatUtils.message("use "+Delta.getPrefix()+"crash givebook <pages> <power>");
             }
         }), SWINGARM("SwingArm", args -> {
             if (args.length == 0) {
@@ -251,7 +251,7 @@ public class Crash extends Command {
 
     @Override public void execute(String[] args) {
         if (args.length == 0) {
-            ChatUtils.message("use $crash <mode> <arguments?> (or $crash list)");
+            ChatUtils.message("use "+Delta.getPrefix()+"crash <mode> <arguments?> (or "+Delta.getPrefix()+"crash list)");
             return;
         }
 
@@ -263,6 +263,6 @@ public class Crash extends Command {
                 return;
             }
         }
-        ChatUtils.message("Crash not found. use $crash list to view all");
+        ChatUtils.message("Crash not found. use "+Delta.getPrefix()+"crash list to view all");
     }
 }

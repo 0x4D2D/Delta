@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
     @Shadow protected TextFieldWidget chatField;
 
     @Inject(at = @At("HEAD"), method = "render") void onRender(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        if (chatField.getText().startsWith("$")) {
+        if (chatField.getText().startsWith(Delta.getPrefix())) {
             chatField.setEditableColor(7289492);
         } else {
             chatField.setEditableColor(14737632);
